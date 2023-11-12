@@ -89,7 +89,7 @@ function TodoContainer() {
         </button>
         {modalStatus && (
           <div className="modal">
-            <p>Enter Your task</p>
+            <h2>Enter Your task</h2>
             <input
               type="text"
               placeholder="Name of the task"
@@ -98,7 +98,7 @@ function TodoContainer() {
               onChange={(e) => setNewTask(e.target.value)}
             />
             <div className="modalBtns">
-              <input type="submit" onClick={handleSubmit} />
+              <button onClick={handleSubmit}> Submit </button>
               <button onClick={handleClose}>Close</button>
             </div>
           </div>
@@ -114,7 +114,7 @@ function TodoContainer() {
                   .filter((task) => task.status === "Pending")
                   .map((task) => (
                     <div className="tasksPend" key={task.id}>
-                      <p>{task.name}</p>
+                      <h2>{task.name}</h2>
                       <div className="taskBtns">
                         <button onClick={() => handleEdit(task.id)}>
                           Edit
@@ -143,8 +143,11 @@ function TodoContainer() {
                   .filter((task) => task.status === "Completed")
                   .map((task) => (
                     <div className="tasksComp" key={task.id}>
-                      <p>{task.name}</p>
-                      <button onClick={() => handleDelete(task.id)}>
+                      <h2>{task.name}</h2>
+                      <button
+                        onClick={() => handleDelete(task.id)}
+                        style={{ backgroundColor: "red" }}
+                      >
                         Delete
                       </button>
                     </div>
