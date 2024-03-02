@@ -1,103 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
 
-.header {
-  height: 5rem;
-  width: 95%;
-  background-color: #000; /* Black background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 40px;
-  margin-top: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  color: #fff; /* White text */
-}
 
-.todoCont {
-  margin-top: 100px;
-  width: 96%;
-  height: 100vh;
-  margin-left: 30px;
-  background-color: #f8f9fa; /* Light gray background */
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-}
 
 .modal {
   position: absolute;
   z-index: 1001;
 }
 
-.para {
-  font-size: 50px;
-  color: #202124; /* Google Gray */
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
 
-.para.hide {
-  opacity: 0;
-  transform: translateY(20px);
-}
 
-.cont {
-  padding: 10px;
-}
 
-.btn {
-  font-size: 30px;
-  background-color: #0070c9; /* Blue button */
-  border: none;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 20px;
-  color: #fff; /* White text */
-  cursor: pointer;
-  
-}
 
-.tasks {
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-  border-radius: 10px;
-  gap: 100px;
-}
 
-.pendingTasks {
-  background-color: #dcdcdc; /* Light gray background */
-  display: flex;
-  width: 500px;
-  justify-content: center;
-  margin: auto;
-  border-radius: 10px;
-  padding: 10px;
-}
 
-.compTasks {
-  padding: 8px;
-  margin: auto;
-  display: flex;
-  width: 500px;
-  justify-content: center;
-  margin: auto;
-  border-radius: 10px;
-  background-color: #e1e4e8; /* Light blue-gray background */
-}
 
 .modal {
   position: absolute;
@@ -112,22 +27,9 @@ code {
   justify-content: space-around;
 }
 
-.input {
-  margin: 10px;
-  padding: 10px;
-  background-color: #f8f9fa; /* Light gray background */
-  color: #000; /* Black text */
-}
 
-.tasksPend {
-  background-color: #dcdcdc; /* Light gray background */
-  margin: 10px;
-}
 
-.tasksComp {
-  background-color: #e1e4e8; /* Light blue-gray background */
-  margin: 10px;
-}
+
 
 .modalBtns {
   cursor: pointer;
@@ -138,22 +40,14 @@ code {
   font-weight: 100;
 }
 
-.taskBtns > button {
-  cursor: pointer;
-  margin: 10px;
-  font-size: large;
-}
-.tasksComp > button {
-  cursor: pointer;
-  margin: 10px;
-  font-size: large;
-}
-.tasksPend > h2 {
-  font-size: 30px;
-}
+
+
 .modal > h2 {
   font-size: 20px;
 }
 .modalBtns > button {
   cursor: pointer;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
